@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_2442a80735bf790aa7f8df94d0703e47 {
+                #map_6c8bb392fa9f4cd782f3e24fdc2a55a6 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,7 +39,7 @@
 <body>
     
     
-            <div class="folium-map" id="map_2442a80735bf790aa7f8df94d0703e47" ></div>
+            <div class="folium-map" id="map_6c8bb392fa9f4cd782f3e24fdc2a55a6" ></div>
         
     
 <div style="
@@ -103,10 +103,10 @@
 <script>
     
     
-            var map_2442a80735bf790aa7f8df94d0703e47 = L.map(
-                "map_2442a80735bf790aa7f8df94d0703e47",
+            var map_6c8bb392fa9f4cd782f3e24fdc2a55a6 = L.map(
+                "map_6c8bb392fa9f4cd782f3e24fdc2a55a6",
                 {
-                    center: [49.479094675, 8.471667924999998],
+                    center: [49.479685, 8.471635],
                     crs: L.CRS.EPSG3857,
                     zoom: 16,
                     zoomControl: true,
@@ -118,85 +118,101 @@
 
         
     
-            var tile_layer_2a9edad007c0a0c5a76ede38195426c1 = L.tileLayer(
+            var tile_layer_69f297932371ca517ede2f9d0015deb5 = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
             );
         
     
-            tile_layer_2a9edad007c0a0c5a76ede38195426c1.addTo(map_2442a80735bf790aa7f8df94d0703e47);
+            tile_layer_69f297932371ca517ede2f9d0015deb5.addTo(map_6c8bb392fa9f4cd782f3e24fdc2a55a6);
         
     
-            var circle_marker_b4bdb51b138b6d8758fad96fe3c6700b = L.circleMarker(
+            var circle_marker_a481b61725850b115dfbb81357d6783a = L.circleMarker(
                 [49.47847, 8.47226],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 34, "stroke": true, "weight": 3}
-            ).addTo(map_2442a80735bf790aa7f8df94d0703e47);
+            ).addTo(map_6c8bb392fa9f4cd782f3e24fdc2a55a6);
         
     
-            var marker_6aaab2760228574a0c77e8f4e7526b7d = L.marker(
+            circle_marker_a481b61725850b115dfbb81357d6783a.bindTooltip(
+                `<div>
+                     <div style='font-size: 16px;'><b>Parking Space A</b></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a335ec2e727a93885e3633ae4b3965f7 = L.marker(
                 [49.47847, 8.47226],
                 {}
-            ).addTo(map_2442a80735bf790aa7f8df94d0703e47);
+            ).addTo(map_6c8bb392fa9f4cd782f3e24fdc2a55a6);
         
     
-            var icon_2d31849f4e7b3b2dccf977d1caec7158 = L.AwesomeMarkers.icon(
+            var icon_00674b36151452cb941400c2cf965451 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
             );
-            marker_6aaab2760228574a0c77e8f4e7526b7d.setIcon(icon_2d31849f4e7b3b2dccf977d1caec7158);
+            marker_a335ec2e727a93885e3633ae4b3965f7.setIcon(icon_00674b36151452cb941400c2cf965451);
         
     
-            var circle_marker_0590b10ab8910742b313d4ab0614e3aa = L.circleMarker(
-                [49.47953, 8.474409999999999],
-                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 3}
-            ).addTo(map_2442a80735bf790aa7f8df94d0703e47);
-        
-    
-            var marker_f4ef87a4a28e14e516cf4e59dd6fa7ac = L.marker(
-                [49.47953, 8.474409999999999],
-                {}
-            ).addTo(map_2442a80735bf790aa7f8df94d0703e47);
-        
-    
-            var icon_f659dc75505b247585516ab8953c6f9f = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            marker_a335ec2e727a93885e3633ae4b3965f7.bindTooltip(
+                `<div>
+                     <div style='font-size: 16px;'><b>Parking Space A</b></div>
+                 </div>`,
+                {"sticky": true}
             );
-            marker_f4ef87a4a28e14e516cf4e59dd6fa7ac.setIcon(icon_f659dc75505b247585516ab8953c6f9f);
         
     
-            var circle_marker_282aa5e546b5e9fa32d82ac9554bcf33 = L.circleMarker(
-                [49.4774787, 8.4689917],
-                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 3}
-            ).addTo(map_2442a80735bf790aa7f8df94d0703e47);
-        
-    
-            var marker_bd9b5d9bff27aee673b08b0a72f023a7 = L.marker(
-                [49.4774787, 8.4689917],
-                {}
-            ).addTo(map_2442a80735bf790aa7f8df94d0703e47);
-        
-    
-            var icon_949b8d6571190fb9bc90ad360c51bb3b = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
-            );
-            marker_bd9b5d9bff27aee673b08b0a72f023a7.setIcon(icon_949b8d6571190fb9bc90ad360c51bb3b);
-        
-    
-            var circle_marker_76fc575d813a8f5ed53d52cb95df25a6 = L.circleMarker(
+            var circle_marker_f32876d12a38f1dc4b6e1cc487d275db = L.circleMarker(
                 [49.4809, 8.47101],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23, "stroke": true, "weight": 3}
-            ).addTo(map_2442a80735bf790aa7f8df94d0703e47);
+            ).addTo(map_6c8bb392fa9f4cd782f3e24fdc2a55a6);
         
     
-            var marker_c1d42700a06ff309c252fac0cbae5b87 = L.marker(
+            circle_marker_f32876d12a38f1dc4b6e1cc487d275db.bindTooltip(
+                `<div>
+                     <div style='font-size: 16px;'><b>Parking Space B</b></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_da5c36e1c3d4a937a7f91d6fe637134c = L.marker(
                 [49.4809, 8.47101],
                 {}
-            ).addTo(map_2442a80735bf790aa7f8df94d0703e47);
+            ).addTo(map_6c8bb392fa9f4cd782f3e24fdc2a55a6);
         
     
-            var icon_1bf112675f133eb356f36d61ee08a914 = L.AwesomeMarkers.icon(
+            var icon_af6140a37fcccd2cbadaaa4c254ace6f = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
             );
-            marker_c1d42700a06ff309c252fac0cbae5b87.setIcon(icon_1bf112675f133eb356f36d61ee08a914);
+            marker_da5c36e1c3d4a937a7f91d6fe637134c.setIcon(icon_af6140a37fcccd2cbadaaa4c254ace6f);
+        
+    
+            marker_da5c36e1c3d4a937a7f91d6fe637134c.bindTooltip(
+                `<div>
+                     <div style='font-size: 16px;'><b>Parking Space B</b></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63ff0a3553c14b712be16ea49addff57 = L.marker(
+                [49.479685, 8.471635],
+                {}
+            ).addTo(map_6c8bb392fa9f4cd782f3e24fdc2a55a6);
+        
+    
+            var icon_7ee22b291416aafbb79478259b46562e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_63ff0a3553c14b712be16ea49addff57.setIcon(icon_7ee22b291416aafbb79478259b46562e);
+        
+    
+            marker_63ff0a3553c14b712be16ea49addff57.bindTooltip(
+                `<div>
+                     <div style='font-size: 16px;'><b>Destination</b></div>
+                 </div>`,
+                {"sticky": true}
+            );
         
 </script>
 </html>
