@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <style>svg#legend {font-size: 14px; background-color: white;}</style>
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6798a5022030e1173929b6382937cf2f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6798a5022030e1173929b6382937cf2f" ></div>
+        
+    
+<div style="
+    position: fixed;
+    bottom: 70px;
+    right: 30px;
+    width: 250px;
+    height: 80px;
+    z-index:9999;
+    font-size:14px;
+    ">
+    <h5>Estimate of available spots</h5>
+    <div style="display: flex; justify-content: space-between;">
+
+    <span style="display: inline-block; text-align: center; height: 23.936536824085962px; line-height: 23.936536824085962px;">
+        <svg width="23.936536824085962" height="23.936536824085962">
+            <circle cx="11.968268412042981" cy="11.968268412042981" r="9.968268412042981" stroke="black" stroke-width="2" fill="none" />
+            <text x="11.968268412042981" y="16.96826841204298" text-anchor="middle" fill="black" font-size="12">50</text>
+        </svg>
+    </span>
+
+    <span style="display: inline-block; text-align: center; height: 33.851375012865375px; line-height: 33.851375012865375px;">
+        <svg width="33.851375012865375" height="33.851375012865375">
+            <circle cx="16.925687506432688" cy="16.925687506432688" r="14.925687506432688" stroke="black" stroke-width="2" fill="none" />
+            <text x="16.925687506432688" y="21.925687506432688" text-anchor="middle" fill="black" font-size="12">100</text>
+        </svg>
+    </span>
+
+    <span style="display: inline-block; text-align: center; height: 41.45929793656026px; line-height: 41.45929793656026px;">
+        <svg width="41.45929793656026" height="41.45929793656026">
+            <circle cx="20.72964896828013" cy="20.72964896828013" r="18.72964896828013" stroke="black" stroke-width="2" fill="none" />
+            <text x="20.72964896828013" y="25.72964896828013" text-anchor="middle" fill="black" font-size="12">150</text>
+        </svg>
+    </span>
+
+    <span style="display: inline-block; text-align: center; height: 47.873073648171925px; line-height: 47.873073648171925px;">
+        <svg width="47.873073648171925" height="47.873073648171925">
+            <circle cx="23.936536824085962" cy="23.936536824085962" r="21.936536824085962" stroke="black" stroke-width="2" fill="none" />
+            <text x="23.936536824085962" y="28.936536824085962" text-anchor="middle" fill="black" font-size="12">200</text>
+        </svg>
+    </span>
+
+    <span style="display: inline-block; text-align: center; height: 53.52372348458314px; line-height: 53.52372348458314px;">
+        <svg width="53.52372348458314" height="53.52372348458314">
+            <circle cx="26.76186174229157" cy="26.76186174229157" r="24.76186174229157" stroke="black" stroke-width="2" fill="none" />
+            <text x="26.76186174229157" y="31.76186174229157" text-anchor="middle" fill="black" font-size="12">250</text>
+        </svg>
+    </span>
+
+    <span style="display: inline-block; text-align: center; height: 58.63230142835039px; line-height: 58.63230142835039px;">
+        <svg width="58.63230142835039" height="58.63230142835039">
+            <circle cx="29.316150714175194" cy="29.316150714175194" r="27.316150714175194" stroke="black" stroke-width="2" fill="none" />
+            <text x="29.316150714175194" y="34.316150714175194" text-anchor="middle" fill="black" font-size="12">300</text>
+        </svg>
+    </span>
+
+    </div>
+</div>
+
+<div style="
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+    width: 300px;
+    height: 150px;
+    z-index:9998;
+    font-size:14px;
+    background-color: #ffffff;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    opacity: 0.8;
+    ">
+</div>
+</body>
+<script>
+    
+    
+            var map_6798a5022030e1173929b6382937cf2f = L.map(
+                "map_6798a5022030e1173929b6382937cf2f",
+                {
+                    center: [49.48650775, 8.4648294],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: false,
+                    preferCanvas: false,
+                    scrollWheelZoom: false,
+                    dragging: false,
+                    doubleClickZoom: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_beda62c410904fbe318afa358e52e601 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_beda62c410904fbe318afa358e52e601.addTo(map_6798a5022030e1173929b6382937cf2f);
+        
+    
+    var color_map_f47a90fcb5abb7abac6f07c03e35dc8a = {};
+
+    
+    color_map_f47a90fcb5abb7abac6f07c03e35dc8a.color = d3.scale.threshold()
+              .domain([23.0, 23.090180360721444, 23.180360721442884, 23.27054108216433, 23.360721442885772, 23.450901803607213, 23.541082164328657, 23.6312625250501, 23.721442885771545, 23.811623246492985, 23.90180360721443, 23.991983967935873, 24.082164328657313, 24.172344689378757, 24.2625250501002, 24.352705410821642, 24.442885771543086, 24.53306613226453, 24.62324649298597, 24.713426853707414, 24.803607214428858, 24.893787575150302, 24.983967935871743, 25.074148296593187, 25.16432865731463, 25.25450901803607, 25.344689378757515, 25.43486973947896, 25.5250501002004, 25.615230460921843, 25.705410821643287, 25.79559118236473, 25.88577154308617, 25.975951903807616, 26.06613226452906, 26.1563126252505, 26.246492985971944, 26.336673346693388, 26.42685370741483, 26.517034068136272, 26.607214428857716, 26.697394789579157, 26.7875751503006, 26.877755511022045, 26.967935871743485, 27.05811623246493, 27.148296593186373, 27.238476953907814, 27.328657314629258, 27.4188376753507, 27.509018036072145, 27.599198396793586, 27.68937875751503, 27.779559118236474, 27.869739478957918, 27.95991983967936, 28.050100200400802, 28.140280561122246, 28.230460921843687, 28.32064128256513, 28.410821643286575, 28.501002004008015, 28.59118236472946, 28.681362725450903, 28.771543086172343, 28.861723446893787, 28.95190380761523, 29.04208416833667, 29.132264529058116, 29.22244488977956, 29.312625250501, 29.402805611222444, 29.492985971943888, 29.58316633266533, 29.673346693386772, 29.763527054108216, 29.85370741482966, 29.943887775551104, 30.034068136272545, 30.12424849699399, 30.214428857715433, 30.304609218436873, 30.394789579158317, 30.48496993987976, 30.5751503006012, 30.665330661322646, 30.75551102204409, 30.84569138276553, 30.935871743486974, 31.026052104208418, 31.11623246492986, 31.206412825651302, 31.296593186372746, 31.386773547094187, 31.47695390781563, 31.567134268537075, 31.657314629258515, 31.747494989979963, 31.837675350701403, 31.927855711422843, 32.01803607214429, 32.10821643286573, 32.19839679358717, 32.28857715430862, 32.37875751503006, 32.46893787575151, 32.55911823647295, 32.64929859719439, 32.739478957915836, 32.829659318637276, 32.91983967935872, 33.010020040080164, 33.100200400801604, 33.190380761523045, 33.28056112224449, 33.37074148296593, 33.46092184368737, 33.55110220440882, 33.64128256513026, 33.7314629258517, 33.82164328657315, 33.91182364729459, 34.00200400801603, 34.09218436873748, 34.18236472945892, 34.27254509018036, 34.362725450901806, 34.452905811623246, 34.54308617234469, 34.633266533066134, 34.723446893787575, 34.813627254509015, 34.90380761523046, 34.9939879759519, 35.08416833667334, 35.17434869739479, 35.26452905811623, 35.35470941883767, 35.44488977955912, 35.53507014028056, 35.625250501002, 35.71543086172345, 35.80561122244489, 35.89579158316633, 35.985971943887776, 36.07615230460922, 36.16633266533066, 36.256513026052104, 36.346693386773545, 36.43687374749499, 36.52705410821643, 36.61723446893787, 36.70741482965932, 36.79759519038076, 36.88777555110221, 36.97795591182365, 37.06813627254509, 37.15831663326654, 37.24849699398798, 37.33867735470942, 37.428857715430865, 37.519038076152306, 37.609218436873746, 37.699398797595194, 37.789579158316634, 37.879759519038075, 37.96993987975952, 38.06012024048096, 38.1503006012024, 38.24048096192385, 38.33066132264529, 38.42084168336673, 38.51102204408818, 38.60120240480962, 38.69138276553106, 38.78156312625251, 38.87174348697395, 38.96192384769539, 39.052104208416836, 39.142284569138276, 39.23246492985972, 39.322645290581164, 39.412825651302605, 39.503006012024045, 39.59318637274549, 39.68336673346693, 39.77354709418837, 39.86372745490982, 39.95390781563126, 40.0440881763527, 40.13426853707415, 40.22444889779559, 40.31462925851703, 40.40480961923848, 40.494989979959925, 40.58517034068136, 40.675350701402806, 40.76553106212425, 40.85571142284569, 40.945891783567134, 41.03607214428858, 41.126252505010015, 41.21643286573146, 41.30661322645291, 41.39679358717434, 41.48697394789579, 41.57715430861724, 41.66733466933868, 41.75751503006012, 41.84769539078157, 41.93787575150301, 42.02805611222445, 42.118236472945895, 42.208416833667336, 42.298597194388776, 42.388777555110224, 42.478957915831664, 42.569138276553105, 42.65931863727455, 42.74949899799599, 42.83967935871743, 42.92985971943888, 43.02004008016032, 43.11022044088176, 43.20040080160321, 43.29058116232465, 43.38076152304609, 43.47094188376754, 43.56112224448898, 43.65130260521042, 43.741482965931866, 43.831663326653306, 43.921843687374746, 44.012024048096194, 44.102204408817634, 44.192384769539075, 44.28256513026052, 44.37274549098196, 44.4629258517034, 44.55310621242485, 44.64328657314629, 44.73346693386773, 44.82364729458918, 44.91382765531062, 45.00400801603206, 45.09418837675351, 45.184368737474955, 45.27454909819639, 45.364729458917836, 45.45490981963928, 45.54509018036072, 45.635270541082164, 45.72545090180361, 45.815631262525045, 45.90581162324649, 45.99599198396794, 46.08617234468938, 46.17635270541082, 46.26653306613227, 46.35671342685371, 46.44689378757515, 46.5370741482966, 46.62725450901804, 46.71743486973948, 46.807615230460925, 46.897795591182366, 46.987975951903806, 47.078156312625254, 47.168336673346694, 47.258517034068134, 47.34869739478958, 47.43887775551102, 47.52905811623246, 47.61923847695391, 47.70941883767535, 47.79959919839679, 47.88977955911824, 47.97995991983968, 48.07014028056112, 48.16032064128257, 48.25050100200401, 48.34068136272545, 48.430861723446895, 48.521042084168336, 48.611222444889776, 48.701402805611224, 48.791583166332664, 48.881763527054105, 48.97194388777555, 49.06212424849699, 49.15230460921843, 49.24248496993988, 49.33266533066132, 49.42284569138276, 49.51302605210421, 49.60320641282566, 49.69338677354709, 49.78356713426854, 49.873747494989985, 49.96392785571142, 50.054108216432866, 50.14428857715431, 50.23446893787575, 50.324649298597194, 50.41482965931864, 50.505010020040075, 50.59519038076152, 50.68537074148297, 50.77555110220441, 50.86573146292585, 50.9559118236473, 51.04609218436874, 51.13627254509018, 51.22645290581163, 51.31663326653307, 51.40681362725451, 51.496993987975955, 51.587174348697395, 51.677354709418836, 51.76753507014028, 51.857715430861724, 51.947895791583164, 52.03807615230461, 52.12825651302605, 52.21843687374749, 52.30861723446894, 52.39879759519038, 52.48897795591182, 52.57915831663327, 52.66933867735471, 52.75951903807615, 52.8496993987976, 52.93987975951904, 53.03006012024048, 53.120240480961925, 53.210420841683366, 53.300601202404806, 53.390781563126254, 53.480961923847694, 53.571142284569135, 53.66132264529058, 53.75150300601202, 53.84168336673346, 53.93186372745491, 54.02204408817636, 54.11222444889779, 54.20240480961924, 54.292585170340686, 54.38276553106212, 54.47294589178357, 54.563126252505015, 54.65330661322645, 54.743486973947896, 54.83366733466934, 54.923847695390776, 55.014028056112224, 55.104208416833664, 55.19438877755511, 55.28456913827655, 55.37474949899799, 55.46492985971944, 55.55511022044088, 55.64529058116233, 55.73547094188377, 55.82565130260521, 55.91583166332666, 56.0060120240481, 56.09619238476954, 56.186372745490985, 56.276553106212425, 56.366733466933866, 56.45691382765531, 56.547094188376754, 56.637274549098194, 56.72745490981964, 56.81763527054108, 56.90781563126252, 56.99799599198397, 57.08817635270541, 57.17835671342685, 57.2685370741483, 57.35871743486974, 57.44889779559118, 57.53907815631263, 57.62925851703407, 57.71943887775551, 57.809619238476955, 57.899799599198396, 57.98997995991984, 58.08016032064128, 58.170340681362724, 58.26052104208417, 58.35070140280561, 58.44088176352705, 58.5310621242485, 58.62124248496994, 58.71142284569138, 58.80160320641283, 58.89178356713427, 58.98196392785571, 59.07214428857716, 59.1623246492986, 59.25250501002004, 59.342685370741485, 59.432865731462925, 59.523046092184366, 59.61322645290581, 59.703406813627254, 59.793587174348694, 59.88376753507014, 59.97394789579158, 60.06412825651302, 60.15430861723447, 60.24448897795591, 60.33466933867736, 60.4248496993988, 60.51503006012024, 60.605210420841686, 60.69539078156313, 60.78557114228457, 60.875751503006015, 60.965931863727455, 61.056112224448896, 61.14629258517034, 61.236472945891784, 61.326653306613224, 61.41683366733467, 61.50701402805611, 61.59719438877755, 61.687374749499, 61.77755511022044, 61.86773547094188, 61.95791583166333, 62.04809619238477, 62.13827655310621, 62.22845691382766, 62.3186372745491, 62.408817635270545, 62.498997995991985, 62.589178356713425, 62.67935871743487, 62.76953907815631, 62.859719438877754, 62.9498997995992, 63.04008016032064, 63.13026052104208, 63.22044088176353, 63.31062124248497, 63.40080160320641, 63.49098196392786, 63.5811623246493, 63.67134268537074, 63.76152304609219, 63.85170340681363, 63.94188376753507, 64.03206412825651, 64.12224448897796, 64.2124248496994, 64.30260521042084, 64.39278557114228, 64.48296593186373, 64.57314629258516, 64.66332665330661, 64.75350701402806, 64.84368737474949, 64.93386773547094, 65.02404809619239, 65.11422845691382, 65.20440881763527, 65.29458917835672, 65.38476953907815, 65.4749498997996, 65.56513026052104, 65.65531062124248, 65.74549098196393, 65.83567134268537, 65.9258517034068, 66.01603206412825, 66.1062124248497, 66.19639278557113, 66.28657314629258, 66.37675350701403, 66.46693386773546, 66.55711422845691, 66.64729458917836, 66.73747494989979, 66.82765531062124, 66.91783567134269, 67.00801603206412, 67.09819639278558, 67.18837675350701, 67.27855711422845, 67.36873747494991, 67.45891783567134, 67.54909819639278, 67.63927855711424, 67.72945891783567, 67.8196392785571, 67.90981963927857, 68.0])
+              .range(['#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffffb2ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#ffd971ff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#fead4cff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#f77034ff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff', '#e31a1cff']);
+    
+
+    color_map_f47a90fcb5abb7abac6f07c03e35dc8a.x = d3.scale.linear()
+              .domain([23.0, 68.0])
+              .range([0, 450 - 50]);
+
+    color_map_f47a90fcb5abb7abac6f07c03e35dc8a.legend = L.control({position: 'topright'});
+    color_map_f47a90fcb5abb7abac6f07c03e35dc8a.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_f47a90fcb5abb7abac6f07c03e35dc8a.legend.addTo(map_6798a5022030e1173929b6382937cf2f);
+
+    color_map_f47a90fcb5abb7abac6f07c03e35dc8a.xAxis = d3.svg.axis()
+        .scale(color_map_f47a90fcb5abb7abac6f07c03e35dc8a.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([23.0, 32.0, 41.0, 50.0, 59.0, 68.0]);
+
+    color_map_f47a90fcb5abb7abac6f07c03e35dc8a.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_f47a90fcb5abb7abac6f07c03e35dc8a.g = color_map_f47a90fcb5abb7abac6f07c03e35dc8a.svg.append("g")
+        .attr("class", "key")
+        .attr("transform", "translate(25,16)");
+
+    color_map_f47a90fcb5abb7abac6f07c03e35dc8a.g.selectAll("rect")
+        .data(color_map_f47a90fcb5abb7abac6f07c03e35dc8a.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_f47a90fcb5abb7abac6f07c03e35dc8a.x(color_map_f47a90fcb5abb7abac6f07c03e35dc8a.color.domain()[i - 1]) : color_map_f47a90fcb5abb7abac6f07c03e35dc8a.x.range()[0],
+            x1: i < color_map_f47a90fcb5abb7abac6f07c03e35dc8a.color.domain().length ? color_map_f47a90fcb5abb7abac6f07c03e35dc8a.x(color_map_f47a90fcb5abb7abac6f07c03e35dc8a.color.domain()[i]) : color_map_f47a90fcb5abb7abac6f07c03e35dc8a.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_f47a90fcb5abb7abac6f07c03e35dc8a.g.call(color_map_f47a90fcb5abb7abac6f07c03e35dc8a.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .text("Prediction Range Width");
+    
+            var circle_marker_2b9db41d3d71b5d3fdf1e0dbdf1eda78 = L.circleMarker(
+                [49.4867, 8.46416],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffb2ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.372334805352946, "stroke": true, "weight": 3}
+            ).addTo(map_6798a5022030e1173929b6382937cf2f);
+        
+    
+            circle_marker_2b9db41d3d71b5d3fdf1e0dbdf1eda78.bindTooltip(
+                `<div>
+                     <div style='font-size: 16px;'><b>Parking Space A</b></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e486ca1125cbba300ce51308d288a701 = L.marker(
+                [49.4867, 8.46416],
+                {}
+            ).addTo(map_6798a5022030e1173929b6382937cf2f);
+        
+    
+            var icon_179995a74df8f24307dd5d7ca671ba32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_e486ca1125cbba300ce51308d288a701.setIcon(icon_179995a74df8f24307dd5d7ca671ba32);
+        
+    
+            marker_e486ca1125cbba300ce51308d288a701.bindTooltip(
+                `<div>
+                     <div style='font-size: 16px;'><b>Parking Space A</b></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9570d40e5e8fa7c66f2f07e77d336ceb = L.circleMarker(
+                [49.4863155, 8.465498799999999],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1cff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 31.755404570407364, "stroke": true, "weight": 3}
+            ).addTo(map_6798a5022030e1173929b6382937cf2f);
+        
+    
+            circle_marker_9570d40e5e8fa7c66f2f07e77d336ceb.bindTooltip(
+                `<div>
+                     <div style='font-size: 16px;'><b>Parking Space B</b></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a11349004ac1fd6b55848927e5531a4 = L.marker(
+                [49.4863155, 8.465498799999999],
+                {}
+            ).addTo(map_6798a5022030e1173929b6382937cf2f);
+        
+    
+            var icon_029cf19635ef009d44d67a411efbfec0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_7a11349004ac1fd6b55848927e5531a4.setIcon(icon_029cf19635ef009d44d67a411efbfec0);
+        
+    
+            marker_7a11349004ac1fd6b55848927e5531a4.bindTooltip(
+                `<div>
+                     <div style='font-size: 16px;'><b>Parking Space B</b></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc893aab5744066cad1d750066b2efee = L.marker(
+                [49.48650775, 8.4648294],
+                {}
+            ).addTo(map_6798a5022030e1173929b6382937cf2f);
+        
+    
+            var icon_c73484dc2c19336766269d92d22c30df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_bc893aab5744066cad1d750066b2efee.setIcon(icon_c73484dc2c19336766269d92d22c30df);
+        
+    
+            marker_bc893aab5744066cad1d750066b2efee.bindTooltip(
+                `<div>
+                     <div style='font-size: 16px;'><b>Destination</b></div>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
