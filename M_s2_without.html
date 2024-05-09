@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_8eac1c08ab8f7ccf931c73906c65c8d1 {
+                #map_d01fb102347ec9a18fdafb3be7fde0f3 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,13 +39,13 @@
 <body>
     
     
-            <div class="folium-map" id="map_8eac1c08ab8f7ccf931c73906c65c8d1" ></div>
+            <div class="folium-map" id="map_d01fb102347ec9a18fdafb3be7fde0f3" ></div>
         
     
 <div style="
     position: fixed;
-    bottom: 70px;
-    right: 30px;
+    bottom: 30px;
+    right: 10px;
     width: 250px;
     height: 80px;
     z-index:9999;
@@ -89,13 +89,6 @@
         </svg>
     </span>
 
-    <span style="display: inline-block; text-align: center; height: 58.63230142835039px; line-height: 58.63230142835039px;">
-        <svg width="58.63230142835039" height="58.63230142835039">
-            <circle cx="29.316150714175194" cy="29.316150714175194" r="27.316150714175194" stroke="black" stroke-width="2" fill="none" />
-            <text x="29.316150714175194" y="34.316150714175194" text-anchor="middle" fill="black" font-size="12">300</text>
-        </svg>
-    </span>
-
     </div>
 </div>
 
@@ -103,8 +96,8 @@
     position: fixed;
     bottom: 10px;
     right: 5px;
-    width: 300px;
-    height: 150px;
+    width: 270px;
+    height: 90px;
     z-index:9998;
     font-size:14px;
     background-color: #ffffff;
@@ -117,14 +110,15 @@
 <script>
     
     
-            var map_8eac1c08ab8f7ccf931c73906c65c8d1 = L.map(
-                "map_8eac1c08ab8f7ccf931c73906c65c8d1",
+            var map_d01fb102347ec9a18fdafb3be7fde0f3 = L.map(
+                "map_d01fb102347ec9a18fdafb3be7fde0f3",
                 {
                     center: [49.48650775, 8.4648294],
                     crs: L.CRS.EPSG3857,
                     zoom: 17,
                     zoomControl: false,
                     preferCanvas: false,
+                    disableZoomControl: true,
                     scrollWheelZoom: false,
                     dragging: false,
                     doubleClickZoom: false,
@@ -135,22 +129,22 @@
 
         
     
-            var tile_layer_b03d3ad8e4731933d8b6230f6488575a = L.tileLayer(
+            var tile_layer_9993106d3c9bbac30713f8f03e848a5d = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
             );
         
     
-            tile_layer_b03d3ad8e4731933d8b6230f6488575a.addTo(map_8eac1c08ab8f7ccf931c73906c65c8d1);
+            tile_layer_9993106d3c9bbac30713f8f03e848a5d.addTo(map_d01fb102347ec9a18fdafb3be7fde0f3);
         
     
-            var circle_marker_7943ac0c3046155e8e5c220ccdbd6e08 = L.circleMarker(
+            var circle_marker_5a7e1f878876dfdf127f1689a45c1c0b = L.circleMarker(
                 [49.4867, 8.46416],
-                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.372334805352946, "stroke": true, "weight": 3}
-            ).addTo(map_8eac1c08ab8f7ccf931c73906c65c8d1);
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.16928443308995, "stroke": true, "weight": 3}
+            ).addTo(map_d01fb102347ec9a18fdafb3be7fde0f3);
         
     
-            circle_marker_7943ac0c3046155e8e5c220ccdbd6e08.bindTooltip(
+            circle_marker_5a7e1f878876dfdf127f1689a45c1c0b.bindTooltip(
                 `<div>
                      <div style='font-size: 16px;'><b>Parking Space A</b></div>
                  </div>`,
@@ -158,19 +152,19 @@
             );
         
     
-            var marker_4f0aae91fa1f1a44ef7dd3798dcbb643 = L.marker(
+            var marker_282d5476bc0d6ec86c3917426c9ec4e4 = L.marker(
                 [49.4867, 8.46416],
                 {}
-            ).addTo(map_8eac1c08ab8f7ccf931c73906c65c8d1);
+            ).addTo(map_d01fb102347ec9a18fdafb3be7fde0f3);
         
     
-            var icon_80800df5c52dd98bbf51ba7311d4cc1a = L.AwesomeMarkers.icon(
+            var icon_dc202212d9f4dc7cbe55d88d1b406436 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
             );
-            marker_4f0aae91fa1f1a44ef7dd3798dcbb643.setIcon(icon_80800df5c52dd98bbf51ba7311d4cc1a);
+            marker_282d5476bc0d6ec86c3917426c9ec4e4.setIcon(icon_dc202212d9f4dc7cbe55d88d1b406436);
         
     
-            marker_4f0aae91fa1f1a44ef7dd3798dcbb643.bindTooltip(
+            marker_282d5476bc0d6ec86c3917426c9ec4e4.bindTooltip(
                 `<div>
                      <div style='font-size: 16px;'><b>Parking Space A</b></div>
                  </div>`,
@@ -178,13 +172,13 @@
             );
         
     
-            var circle_marker_e3174b291311057c142a4488a7c92974 = L.circleMarker(
+            var circle_marker_b51e5364acc6374354fbde91dedb1e64 = L.circleMarker(
                 [49.4863155, 8.465498799999999],
-                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 31.755404570407364, "stroke": true, "weight": 3}
-            ).addTo(map_8eac1c08ab8f7ccf931c73906c65c8d1);
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 33.253699713001694, "stroke": true, "weight": 3}
+            ).addTo(map_d01fb102347ec9a18fdafb3be7fde0f3);
         
     
-            circle_marker_e3174b291311057c142a4488a7c92974.bindTooltip(
+            circle_marker_b51e5364acc6374354fbde91dedb1e64.bindTooltip(
                 `<div>
                      <div style='font-size: 16px;'><b>Parking Space B</b></div>
                  </div>`,
@@ -192,19 +186,19 @@
             );
         
     
-            var marker_16d7616edb96678d706979fae3c4988b = L.marker(
+            var marker_b5b654b7c65409f4133724fe1165090a = L.marker(
                 [49.4863155, 8.465498799999999],
                 {}
-            ).addTo(map_8eac1c08ab8f7ccf931c73906c65c8d1);
+            ).addTo(map_d01fb102347ec9a18fdafb3be7fde0f3);
         
     
-            var icon_b050d1eb6907dc73b7ca99d6d86ec2b9 = L.AwesomeMarkers.icon(
+            var icon_cf9bea71997fd41206a7b60159f2acee = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
             );
-            marker_16d7616edb96678d706979fae3c4988b.setIcon(icon_b050d1eb6907dc73b7ca99d6d86ec2b9);
+            marker_b5b654b7c65409f4133724fe1165090a.setIcon(icon_cf9bea71997fd41206a7b60159f2acee);
         
     
-            marker_16d7616edb96678d706979fae3c4988b.bindTooltip(
+            marker_b5b654b7c65409f4133724fe1165090a.bindTooltip(
                 `<div>
                      <div style='font-size: 16px;'><b>Parking Space B</b></div>
                  </div>`,
@@ -212,19 +206,19 @@
             );
         
     
-            var marker_9ff494a644bd9d2e96fd13b2916cb24b = L.marker(
+            var marker_1bf2380b66e0d243c2a6146719aee591 = L.marker(
                 [49.48650775, 8.4648294],
                 {}
-            ).addTo(map_8eac1c08ab8f7ccf931c73906c65c8d1);
+            ).addTo(map_d01fb102347ec9a18fdafb3be7fde0f3);
         
     
-            var icon_371afe150c00b30e64442c955bf7c040 = L.AwesomeMarkers.icon(
+            var icon_ccee0e27dd993755889c7e70e2fd4d3b = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
             );
-            marker_9ff494a644bd9d2e96fd13b2916cb24b.setIcon(icon_371afe150c00b30e64442c955bf7c040);
+            marker_1bf2380b66e0d243c2a6146719aee591.setIcon(icon_ccee0e27dd993755889c7e70e2fd4d3b);
         
     
-            marker_9ff494a644bd9d2e96fd13b2916cb24b.bindTooltip(
+            marker_1bf2380b66e0d243c2a6146719aee591.bindTooltip(
                 `<div>
                      <div style='font-size: 16px;'><b>Destination</b></div>
                  </div>`,
